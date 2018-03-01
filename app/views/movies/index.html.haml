@@ -4,10 +4,10 @@
 %table#movies
   %thead
     %tr
-      %th {:class => ("hilite" if @order == "title")}
+      %th{:class => ("hilite" if @order == "title")}
         = link_to "Movie Title", params.merge(:sort => "title"), id: "title_header"
       %th Rating
-      %th {:class => ("hilite" if @order == "release_date")}
+      %th{:class => ("hilite" if @order == "release_date")}
         = link_to "Release Date", params.merge(:sort => "release_date"), id: "release_date_header"
       %th More Info
   %tbody
